@@ -55,15 +55,18 @@ const Card = () => {
               <span style={{ color: "#A259FF" }}>
                 {displayCardDetails.location.street.number},
               </span>
-              <span> {displayCardDetails.location.street.name} </span>
-              <span> {displayCardDetails.location.city} </span>
-              <span> {displayCardDetails.location.state} </span>
-              <span>{displayCardDetails.location.county}</span>
+              <span> {displayCardDetails.location.street.name}, </span>
+              <span> {displayCardDetails.location.city}, </span>
+              <span> {displayCardDetails.location.state}, </span>
+              <span>
+                <b>{displayCardDetails.location.country}</b>,
+              </span>
               <span>{displayCardDetails.location.postcode}</span>
             </div>
             <br />
             <div>
               {displayCardDetails.location.timezone.offset}
+              <span> - </span>
               {displayCardDetails.location.timezone.description}
             </div>
             <br />
@@ -80,15 +83,15 @@ const Card = () => {
                   key={singleCard.email}
                 >
                   <div className="card_style">
-                    <p className="gender_styles">
-                      {singleCard.gender} {singleCard.nat}{" "}
-                    </p>
-                    <h1 className="name_style">
+                    <span className="gender_styles">
+                      {singleCard.gender} . {singleCard.nat}{" "}
+                    </span>
+                    <span className="name_style">
                       <span>{singleCard.name.title}</span>
                       <span> {singleCard.name.first} </span>
                       <span>{singleCard.name.last}</span>
-                    </h1>
-                    <div className="email_style">{singleCard.email}</div>
+                    </span>
+                    <span className="email_style">{singleCard.email}</span>
                   </div>
                 </div>
               );

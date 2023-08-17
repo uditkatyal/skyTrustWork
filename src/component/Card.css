@@ -1,14 +1,14 @@
 .main_card {
   border-radius: 16px;
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
-  margin: auto;
-  width: 60%;
-  height: 291px;
+  background: #fff;
+  margin: 3rem auto;
+  width: 55%;
+  height: 251px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  margin-bottom: 2rem;
+  gap: 60px;
   font-family: Roboto;
 }
 .main_card img {
@@ -31,7 +31,7 @@
 }
 
 .parent_style {
-  margin-top: 2rem;
+  margin: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,6 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%;
 }
 .name_style {
   color: #000;
@@ -53,8 +52,6 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 135%;
-  align-self: stretch;
 }
 
 .main_card_name {
@@ -75,15 +72,23 @@
 .gender_styles {
   color: rgba(0, 0, 0, 0.6);
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%;
 }
 .card_style:hover {
   background: #a259ff;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
-.card_style.name_style:hover {
-  color: greenyellow;
+.card_style:hover .email_style {
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+.card_style:hover .gender_styles {
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+.card_style:hover .name_style {
+  color: white;
+  transition: 0.4s ease-in-out;
 }
